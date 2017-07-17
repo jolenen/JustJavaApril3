@@ -28,10 +28,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         /** 
-        * Display "Free" message
+        * Method is called when order button is clicked.
         */
-        String priceMessage = "Free";
-        displayPrice (quantity*5);
+        int price = quantity * 5;
+        String priceMessage = "Total: $" + price;
+        priceMessage = priceMessage + "\nThank You!";
+        displayMessage(priceMessage);
     }
     /**
      * This method is called when the + button is clicked.
